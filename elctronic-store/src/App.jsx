@@ -8,7 +8,7 @@ import {Routes,Route} from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 function App() {
-  let isAuth=true;
+  let isAuth=false;
   return (
     <div className="App">
       <div>
