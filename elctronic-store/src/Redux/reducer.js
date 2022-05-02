@@ -1,4 +1,7 @@
-const init = {};
+const init = {
+  orders:[],
+  
+};
 
 export const reducer = (store = init, { type, payload }) => {
   switch (type) {
