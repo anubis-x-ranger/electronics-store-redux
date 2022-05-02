@@ -8,19 +8,17 @@ import {Routes,Route} from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 function App() {
-  const [isLoggedIn,setIsLoggedIn]=useState(true);
+  let isAuth=true;
   return (
     <div className="App">
       <div>
+        
         <Link className="nav-home" to="/">
           Home
         </Link>
-        {/* Show either login or logout below */}
-        {isLoggedIn="true" ? <Link className="nav-logout" to="/logout">
-          Logout
-        </Link>:<Link className="nav-login" to="/login">
-          Login
-        </Link>}
+        
+          {isAuth=true  ? <Link className="nav-logout" to="/logout">Logout</Link>:<Link className="nav-login" to="/login">Login</Link> }
+        
       </div>
 
       <Routes>

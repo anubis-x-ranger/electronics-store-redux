@@ -1,6 +1,6 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
+import { NewOrder } from "../components/NewOrder"
 
-const [data,setData]=useState([]);
 // action types
 export const ADD_ORDER="ADD_ORDER"
 
@@ -9,6 +9,9 @@ export const ADD_ORDER="ADD_ORDER"
 export const add_order=()=>{
     return{
         type:"ADD_ORDER",
-        payload:data
+        payload:{
+
+
+        }
     }
 }
